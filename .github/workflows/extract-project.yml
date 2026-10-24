@@ -1,0 +1,52 @@
+
+name: Prepare Aim Range Source
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  extract:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Extract project files
+        shell: bash
+        run: |
+          ZIP="AimRange-iOS-CloudBuild-Starter.zip"
+
+          if [ ! -f "$ZIP" ]; then
+            echo "Project ZIP not found: $ZIP"
+            exit 1
+          fi
+
+          mkdir -p /tmp/aimrange
+          unzip -q "$ZIP" -d /tmp/aimrange
+
+          if [ ! -d /tmp/aimrange/AimRange ]; then
+            echo "AimRange directory not found in ZIP"
+            exit 1
+          fi
+
+          cp -R /tmp/aimrange/AimRange/. .
+          rm "$ZIP"
+
+      - name: Commit prepared project
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email \
+            "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add -A
+
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "Prepare Aim Range iOS project"
+            git push
+          fi
