@@ -1,0 +1,29 @@
+// !$*UTF8*$!
+{
+ archiveVersion = 1;
+ classes = {};
+ objectVersion = 56;
+ objects = {
+  A10000000000000000000001 /* Project object */ = {isa = PBXProject; attributes = {BuildIndependentTargetsInParallel = 1; LastUpgradeCheck = 1600; TargetAttributes = {A10000000000000000000002 = {CreatedOnToolsVersion = 16.0; }; }; }; buildConfigurationList = A10000000000000000000006; compatibilityVersion = "Xcode 14.0"; developmentRegion = en; hasScannedForEncodings = 0; knownRegions = (en, Base, zh-Hans); mainGroup = A10000000000000000000003; productRefGroup = A10000000000000000000004; projectDirPath = ""; projectRoot = ""; targets = (A10000000000000000000002,); };
+  A10000000000000000000002 /* AimRange */ = {isa = PBXNativeTarget; buildConfigurationList = A10000000000000000000007; buildPhases = (A10000000000000000000008, A10000000000000000000009, A1000000000000000000000A,); buildRules = (); dependencies = (); name = AimRange; productName = AimRange; productReference = A10000000000000000000005; productType = "com.apple.product-type.application"; };
+  A10000000000000000000003 = {isa = PBXGroup; children = (A1000000000000000000000B, A10000000000000000000004,); sourceTree = "<group>"; };
+  A10000000000000000000004 = {isa = PBXGroup; children = (A10000000000000000000005,); name = Products; sourceTree = "<group>"; };
+  A10000000000000000000005 = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AimRange.app; sourceTree = BUILT_PRODUCTS_DIR; };
+  A1000000000000000000000B = {isa = PBXGroup; children = (A1000000000000000000000C, A1000000000000000000000D, A1000000000000000000000E,); path = AimRange; sourceTree = "<group>"; };
+  A1000000000000000000000C = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AimRangeApp.swift; sourceTree = "<group>"; };
+  A1000000000000000000000D = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+  A1000000000000000000000E = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+  A10000000000000000000008 = {isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (A1000000000000000000000F, A10000000000000000000010,); runOnlyForDeploymentPostprocessing = 0; };
+  A10000000000000000000009 = {isa = PBXFrameworksBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
+  A1000000000000000000000A = {isa = PBXResourcesBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
+  A1000000000000000000000F = {isa = PBXBuildFile; fileRef = A1000000000000000000000C; };
+  A10000000000000000000010 = {isa = PBXBuildFile; fileRef = A1000000000000000000000D; };
+  A10000000000000000000006 = {isa = XCConfigurationList; buildConfigurations = (A10000000000000000000011, A10000000000000000000012,); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+  A10000000000000000000007 = {isa = XCConfigurationList; buildConfigurations = (A10000000000000000000013, A10000000000000000000014,); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+  A10000000000000000000011 = {isa = XCBuildConfiguration; buildSettings = {CLANG_ENABLE_MODULES = YES; SWIFT_VERSION = 5.0; IPHONEOS_DEPLOYMENT_TARGET = 17.0; SDKROOT = iphoneos; }; name = Debug; };
+  A10000000000000000000012 = {isa = XCBuildConfiguration; buildSettings = {CLANG_ENABLE_MODULES = YES; SWIFT_VERSION = 5.0; IPHONEOS_DEPLOYMENT_TARGET = 17.0; SDKROOT = iphoneos; }; name = Release; };
+  A10000000000000000000013 = {isa = XCBuildConfiguration; buildSettings = {GENERATE_INFOPLIST_FILE = NO; INFOPLIST_FILE = AimRange/Info.plist; PRODUCT_BUNDLE_IDENTIFIER = com.example.AimRange; PRODUCT_NAME = "$(TARGET_NAME)"; TARGETED_DEVICE_FAMILY = "1,2"; SWIFT_VERSION = 5.0; IPHONEOS_DEPLOYMENT_TARGET = 17.0; SDKROOT = iphoneos; CODE_SIGN_STYLE = Automatic; }; name = Debug; };
+  A10000000000000000000014 = {isa = XCBuildConfiguration; buildSettings = {GENERATE_INFOPLIST_FILE = NO; INFOPLIST_FILE = AimRange/Info.plist; PRODUCT_BUNDLE_IDENTIFIER = com.example.AimRange; PRODUCT_NAME = "$(TARGET_NAME)"; TARGETED_DEVICE_FAMILY = "1,2"; SWIFT_VERSION = 5.0; IPHONEOS_DEPLOYMENT_TARGET = 17.0; SDKROOT = iphoneos; CODE_SIGN_STYLE = Automatic; }; name = Release; };
+ };
+ rootObject = A10000000000000000000001;
+}
